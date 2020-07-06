@@ -161,7 +161,7 @@ You only need the modded libraries to use the extra features, the original libra
 
 
 To use the PythondsMinecraft plugin, the python mcse library is required : 
-[RaspberryJuice/src/pythondsminecraft_src/vxxx/mcse/](https://github.com/sprouviere/RaspberryJuice/src/pythondsminecraft_src/)
+[RaspberryJuice/src/pythondsminecraft_src/vxxx/mcse/](https://github.com/sprouviere/RaspberryJuice/tree/master/src/pythondsminecraft_src)
 then choose the version of the mcse which depends on the PythondsMinecraft version ie the Minecraft server version
 
 ## Build
