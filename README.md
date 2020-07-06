@@ -70,27 +70,46 @@ for an exhaustive list see : http://pinet.rouviere.free.fr/description_mcse/tuto
 Note - extra features are NOT guaranteed to be maintained in future releases, particularly if updates are made to the original Pi API which replace the functionality
 
 ###  PythondsMinecraft Commands supported
-world.setBlock 
-world.setBlocks 
-world.setBlockAge : Material block of  BlockData type Ageable
-world.setBlockBisected : Material block of  BlockData type  Bisected
-world.setBlockDir : Material block of  BlockData type BlockData
-world.setBlockLevel : Material block of  BlockData type  Levelled
-world.setBlockMultiFace : Material block of  BlockData type  MultipleFacing 
-world.setBlockOrient : Material block of  BlockData type  Orientable
-world.setBlockRotat : Material block of  BlockData type Rotatable
-world.setBlockSapl : Material block of  BlockData type Sapling 
-world.setBed : Material block of  BlockData type  BED 
-world.setChest : Material block of  BlockData type Chest 
-world.setDoor : PMaterial block of  BlockData type Door 
-world.setFence : Material block of  BlockData type  Fence 
-world.setFurnace : Material block of  BlockData type  Furnace 
-world.setGate : Material block of  BlockData type  Gate 
-world.setPane : Material block of  BlockData type stained glass pane
-world.setSign : Material block of  BlockData type  Sign (wall or stand)
-world.setSlab : Material block of  BlockData type  Slab 
-world.setStairs : Material block of  BlockData type  Stair
-world.setTrapDoor : Material block of  BlockData type TrapDoor
+- world.setBlock 
+- world.setBlocks 
+- world.setBlockAge : Material block of  BlockData type Ageable
+- world.setBlockBisected : Material block of  BlockData type  Bisected
+- world.setBlockDir : Material block of  BlockData type BlockData
+- world.setBlockLevel : Material block of  BlockData type  Levelled
+- world.setBlockMultiFace : Material block of  BlockData type  MultipleFacing 
+- world.setBlockOrient : Material block of  BlockData type  Orientable
+- world.setBlockRotat : Material block of  BlockData type Rotatable
+- world.setBlockSapl : Material block of  BlockData type Sapling 
+- world.setBed : Material block of  BlockData type  BED 
+- world.setChest : Material block of  BlockData type Chest 
+- world.setDoor : PMaterial block of  BlockData type Door 
+- world.setFence : Material block of  BlockData type  Fence 
+- world.setFurnace : Material block of  BlockData type  Furnace 
+- world.setGate : Material block of  BlockData type  Gate 
+- world.setPane : Material block of  BlockData type stained glass pane
+- world.setSign : Material block of  BlockData type  Sign (wall or stand)
+- world.setSlab : Material block of  BlockData type  Slab 
+- world.setStairs : Material block of  BlockData type  Stair
+- world.setTrapDoor : Material block of  BlockData type TrapDoor
+- world.getBlock 
+- world.getBlockWithData 
+- world.getHeight 
+- world.getEntityTypes
+- world.getEntities 
+- world.removeEntity 
+- world.removeEntities 
+- world.setCustomName 
+- world.spawnEntity 
+- world.spawnCat 
+- world.spawnHorse 
+- world.spawnParrot 
+- sworld.pawnRabbit 
+- world.spawnWolf 
+- world.getPlayerEntityId 
+- world.etPlayerEntityIds 
+- world.postToChat
+
+
 
 ## Config
 
