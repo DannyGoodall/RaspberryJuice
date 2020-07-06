@@ -6,4 +6,4 @@ Plugin for minecraft server :
 
 ## Pythondsminecraft is to use with mcse Python library
 
-[ https://github.com/sprouviere/RaspberryJuice/tree/master/src/pythondsminecraft_srcvxxx (https://github.com/sprouviere/RaspberryJuice/tree/master/src/pythondsminecraft_src)
+https://github.com/sprouviere/RaspberryJuice/tree/master/src/pythondsminecraft_src  then choose the right version - depends on the minecraft server
