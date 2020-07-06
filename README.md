@@ -124,32 +124,25 @@ Note - extra features are NOT guaranteed to be maintained in future releases, pa
 - player.setRotation doesn't- Pb with Bukkit version 15.1.1
 - player.setTilePos
 
+- entity.getEntities 
+- entity.getDirection 
+- entity.getName 
+- entity.getPos 
+- entity.getPitch 
+- entity.getRotation -entity.getTilePos 
+- entity.pollBlockHits 
+- entity.PollProjectileHits :
+- ntity.removeEntities 
+- ntity.setDirection 
+- entity.setPos 
+- ntity.setPitch :
+- entity.setRotation doesn't- Pb with Bukkit version 15.1.1
+- entity.setTilePos
 
--entity.getEntities 
--entity.getDirection 
--entity.getName 
--entity.getPos 
--entity.getPitch 
--entity.getRotation 
--entity.getTilePos 
--entity.pollBlockHits 
--entity.PollProjectileHits :
--entity.removeEntities 
--entity.setDirection 
--entity.setPos 
--entity.setPitch :
--entity.setRotation doesn't- Pb with Bukkit version 15.1.1
--entity.setTilePos
-
-
- -events.pollBlockHits
- -Events.PollProjectileHits 
+- events.pollBlockHits
+- events.PollProjectileHits 
  
  see Python examples on [http://pinet.rouviere.free.fr/description_mcse/tutoriel_utilisation_mcse__librairie_python.html
-
-
-
-
 
 
 ## Config
