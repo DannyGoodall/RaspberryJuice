@@ -109,6 +109,47 @@ Note - extra features are NOT guaranteed to be maintained in future releases, pa
 - world.etPlayerEntityIds 
 - world.postToChat
 
+- player.getDirection 
+- player.getEntities :
+- player.getPitch 
+- player.getPos 
+- player.getRotation 
+- player.pollBlockHits :
+- player.pollProjectileHits 
+- player.removeEntities 
+- player.getTilePos 
+- player.setDirection 
+- player.setPos 
+- player.setPich 
+- player.setRotation doesn't- Pb with Bukkit version 15.1.1
+- player.setTilePos
+
+
+-entity.getEntities 
+-entity.getDirection 
+-entity.getName 
+-entity.getPos 
+-entity.getPitch 
+-entity.getRotation 
+-entity.getTilePos 
+-entity.pollBlockHits 
+-entity.PollProjectileHits :
+-entity.removeEntities 
+-entity.setDirection 
+-entity.setPos 
+-entity.setPitch :
+-entity.setRotation doesn't- Pb with Bukkit version 15.1.1
+-entity.setTilePos
+
+
+ -events.pollBlockHits
+ -Events.PollProjectileHits 
+ 
+ see Python examples on [http://pinet.rouviere.free.fr/description_mcse/tutoriel_utilisation_mcse__librairie_python.html
+
+
+
+
 
 
 ## Config
@@ -124,6 +165,11 @@ Modify config.yml:
 To use the extra features an modded version of the java and python libraries that were originally supplied by Mojang with the Pi is required, [github.com/zhuowei/RaspberryJuice/tree/master/src/main/resources/mcpi](https://github.com/zhuowei/RaspberryJuice/tree/master/src/main/resources/mcpi).  
 
 You only need the modded libraries to use the extra features, the original libraries supplied with Minecraft Pi edition still work, you just wont be able to use the extra features
+
+
+To use the PythondsMinecraft plugin, the python mcse library is required : 
+[RaspberryJuice/src/pythondsminecraft_src/vxxx/mcse/](https://github.com/sprouviere/RaspberryJuice/src/pythondsminecraft_src/)
+then choose the version of the mcse which depends on the PythondsMinecraft version ie the Minecraft server version
 
 ## Build
 
@@ -157,7 +203,7 @@ mvn package
 
 ##  Pythondsminecraft Version history
 
- - 2.1 - Initial release
+ - 2.1 - Initial release for Minecraft server 1.15.1 and later
 
 
 ## Contributors
