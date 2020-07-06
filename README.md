@@ -2,9 +2,18 @@
 
 A Bukkit plugin which implements the Minecraft Pi Socket API.
 
+# PythondsMinecraft
+
+A Bukkit plugin which implements Minecraft server from 1.15.1 version
+PythondsMinecraft replace id  block numbers ant entity type numbers by MATERIAL, BLOCKDATA and ENTITY names
+it implements all the RaspberryJuice - mcpi commands and more ... with specific BlockData
+
+for an exhaustive list see : http://pinet.rouviere.free.fr/description_mcse/tutoriel_utilisation_mcse__librairie_python.html
+
+
 ## Commands
 
-### Commands supported
+###  RaspberryJuice Commands supported
 
  - world.get/setBlock
  - world.getBlockWithData
@@ -24,11 +33,11 @@ A Bukkit plugin which implements the Minecraft Pi Socket API.
  - entity.getPos
  - entity.setPos
 
-### Commands that can't be supported
+### RaspberryJuice Commands that can't be supported
 
  - Camera angles
 
-### Extra commands
+### RaspberryJuice Extra commands
 
  - getBlocks(x1,y1,z1,x2,y2,z2) has been implemented
  - getDirection, getRotation, getPitch functions - get the 'direction' players and entities are facing
@@ -60,6 +69,29 @@ A Bukkit plugin which implements the Minecraft Pi Socket API.
  
 Note - extra features are NOT guaranteed to be maintained in future releases, particularly if updates are made to the original Pi API which replace the functionality
 
+###  PythondsMinecraft Commands supported
+world.setBlock 
+world.setBlocks 
+world.setBlockAge : Material block of  BlockData type Ageable
+world.setBlockBisected : Material block of  BlockData type  Bisected
+world.setBlockDir : Material block of  BlockData type BlockData
+world.setBlockLevel : Material block of  BlockData type  Levelled
+world.setBlockMultiFace : Material block of  BlockData type  MultipleFacing 
+world.setBlockOrient : Material block of  BlockData type  Orientable
+world.setBlockRotat : Material block of  BlockData type Rotatable
+world.setBlockSapl : Material block of  BlockData type Sapling 
+world.setBed : Material block of  BlockData type  BED 
+world.setChest : Material block of  BlockData type Chest 
+world.setDoor : PMaterial block of  BlockData type Door 
+world.setFence : Material block of  BlockData type  Fence 
+world.setFurnace : Material block of  BlockData type  Furnace 
+world.setGate : Material block of  BlockData type  Gate 
+world.setPane : Material block of  BlockData type stained glass pane
+world.setSign : Material block of  BlockData type  Sign (wall or stand)
+world.setSlab : Material block of  BlockData type  Slab 
+world.setStairs : Material block of  BlockData type  Stair
+world.setTrapDoor : Material block of  BlockData type TrapDoor
+
 ## Config
 
 Modify config.yml:
@@ -84,7 +116,7 @@ cd RaspberryJuice
 mvn package
 ```
 
-## Version history
+##  RaspberryJuice Version history
 
  - 1.12 - getEntities, removeEntities, pollProjectileHits, events calls by player and entity
  - 1.11 - spawnEntity, setDirection, setRotation, setPitch
@@ -103,6 +135,12 @@ mvn package
  - 1.1.1 - block hit events
  - 1.1 - Initial release
 
+
+##  Pythondsminecraft Version history
+
+ - 2.1 - Initial release
+
+
 ## Contributors
 
  - [zhuowei](https://github.com/zhuowei)
@@ -113,4 +151,5 @@ mvn package
  - [pxai](https://github.com/pxai)
  - [RonTang](https://github.com/RonTang)
  - [Marcinosoft](https://github.com/Marcinosoft)
+ - [sprouviere](https://github.com/sprouviere)
  
