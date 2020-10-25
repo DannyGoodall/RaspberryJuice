@@ -8,8 +8,7 @@ A Bukkit plugin which implements Minecraft server from 1.15.1 version
 PythondsMinecraft replace id  block numbers ant entity type numbers by MATERIAL, BLOCKDATA and ENTITY names
 it implements all the RaspberryJuice - mcpi commands and more ... with specific BlockData
 
-for an exhaustive list see : http://pinet.rouviere.free.fr/description_mcse/tutoriel_utilisation_mcse__librairie_python.html
-
+for an exhaustive list and PYTHON EXAMPLES see : http://pinet.rouviere.free.fr/description_mcse/tutoriel_utilisation_mcse__librairie_python.html -> Tutoriel utilisation mcse 
 
 ## Commands
 
