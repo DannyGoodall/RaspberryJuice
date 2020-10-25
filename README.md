@@ -39,7 +39,7 @@ for an exhaustive list see : http://pinet.rouviere.free.fr/description_mcse/tuto
 
 ### RaspberryJuice Extra commands
 
- - getBlocks(x1,y1,z1,x2,y2,z2) has been implemented
+ - getBlocks(x1,y1,z1,x2,y2,z2) implemented
  - getDirection, getRotation, getPitch functions - get the 'direction' players and entities are facing
  - setDirection, setRotation, setPitch functions - set the 'direction' players and entities are facing
  - getPlayerId(playerName) - get the entity of a player by name
@@ -70,29 +70,42 @@ for an exhaustive list see : http://pinet.rouviere.free.fr/description_mcse/tuto
 Note - extra features are NOT guaranteed to be maintained in future releases, particularly if updates are made to the original Pi API which replace the functionality
 
 ###  PythondsMinecraft Commands supported
+1) Add Blocks Methods - Minecraft Class
+------------------------------------------------
 - world.setBlock 
 - world.setBlocks 
 - world.setBlockAge : Material block of  BlockData type Ageable
 - world.setBlockBisected : Material block of  BlockData type  Bisected
 - world.setBlockDir : Material block of  BlockData type BlockData
+- world.SetBlockDistrib : Material block of  BlockData type Dispenser -  version 3.0 and more
 - world.setBlockLevel : Material block of  BlockData type  Levelled
 - world.setBlockMultiFace : Material block of  BlockData type  MultipleFacing 
 - world.setBlockOrient : Material block of  BlockData type  Orientable
+- wordl.setBlockPower :  Material block of  BlockData type Powerable - version 3.0 and more
 - world.setBlockRotat : Material block of  BlockData type Rotatable
 - world.setBlockSapl : Material block of  BlockData type Sapling 
+- world.setBlockWithData : set a block with his Blockdata !!! - version 3.0 and more
 - world.setBed : Material block of  BlockData type  BED 
 - world.setChest : Material block of  BlockData type Chest 
-- world.setDoor : PMaterial block of  BlockData type Door 
+- world.setDoor : Material block of  BlockData type Door 
+- world.setEntonnoir : Material block of  BlockData type Hooper - version 3.0 and more
 - world.setFence : Material block of  BlockData type  Fence 
 - world.setFurnace : Material block of  BlockData type  Furnace 
 - world.setGate : Material block of  BlockData type  Gate 
+- world.setGindstone :  Material block of  BlockData type Gindstone - version 3.0 and more
+- world.setOberver : Material block of  BlockData type Observer - version 3.0 and more
 - world.setPane : Material block of  BlockData type stained glass pane
+- world.setRail : Material block of  BlockData type rail - version 3.0 and more
 - world.setSign : Material block of  BlockData type  Sign (wall or stand)
-- world.setSlab : Material block of  BlockData type  Slab 
+- world.setSlab : Material block of  BlockData type Slab 
 - world.setStairs : Material block of  BlockData type  Stair
+- world.setSwitch :  Material block of  BlockData type Switch - version 3.0 and more
 - world.setTrapDoor : Material block of  BlockData type TrapDoor
+- world.setWall :  Material block of  BlockData type Wall - version 3.0 and more
+
+
 - world.getBlock 
-- world.getBlockWithData 
+- world.getBlockWithData : Get block and BlockData at X,Y,Z
 - world.getHeight 
 - world.getEntityTypes
 - world.getEntities 
@@ -197,6 +210,7 @@ mvn package
 ##  Pythondsminecraft Version history
 
  - 2.1 - Initial release for Minecraft server 1.15.1 and later
+ - 3.0 - Release for Minecraft server 1.16.1 and later
 
 
 ## Contributors
