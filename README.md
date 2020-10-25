@@ -13,61 +13,15 @@ for an exhaustive list see : http://pinet.rouviere.free.fr/description_mcse/tuto
 
 ## Commands
 
-###  RaspberryJuice Commands supported
+### A lot of RaspberryJuice Commands supported are "traduced" in PythondsMinecraft
 
- - world.get/setBlock
- - world.getBlockWithData
- - world.setBlocks
- - world.getPlayerIds
- - world.getBlocks
- - chat.post
- - events.clear
- - events.block.hits
- - player.getTile
- - player.setTile
- - player.getPos
- - player.setPos
- - world.getHeight
- - entity.getTile
- - entity.setTile
- - entity.getPos
- - entity.setPos
+### some of the RaspberryJuice Extra commands on entity still present but not tested
 
-### RaspberryJuice Commands that can't be supported
-
- - Camera angles
-
-### RaspberryJuice Extra commands
-
- - getBlocks(x1,y1,z1,x2,y2,z2) implemented
- - getDirection, getRotation, getPitch functions - get the 'direction' players and entities are facing
- - setDirection, setRotation, setPitch functions - set the 'direction' players and entities are facing
- - getPlayerId(playerName) - get the entity of a player by name
- - pollChatPosts() - get events back for posts to the chat
- - setSign(x,y,z,block type id,data,line1,line2,line3,line4)
-   - Wall signs (id=68 or block.SIGN_WALL.id) require data for facing direction 2=north, 3=south, 4=west, 5=east
-   - Standing signs (id=63 or block.SIGN_STANDING.id) require data for facing rotation (0-15) 0=south, 4=west, 8=north, 12=east
- - spawnEntity(x,y,z,entity) - creates an entity and returns its entity id. see entity.py for list.
- - getEntityTypes - returns all the entities supported by the server.
- - entity.getName(id) - get a player name for entity id. Reverse of getPlayerId(playerName)
- - getEntities - get all currently loaded entities list by optional entity type id
- - removeEntity - removes entity with specified id
- - removeEntities - removes all currently loaded entities by optional entity type id
- - entity.getEntities - get currently loaded entities list near specified entity by optional entity type id
- - entity.removeEntities - removes currently loaded entities near specified entity, by optional entity type id
- - player.getEntities - get currently loaded entities list near specified player entity id by optional entity type id
- - player.removeEntities - removes currently loaded entities near specified player entity id, by optional entity type id
- - events.pollProjectileHits - get events back of arrow hit
- - player.pollProjectileHits - get events back of arrow hit for the player
- - player.pollBlockHits - get block hits for the player
  - player.pollChatPosts - get events back for posts to the chat for the player
  - player.clearEvents - clear events for the player
- - entity.pollProjectileHits - get events back of arrow hit for an entity
- - entity.pollBlockHits - get block hits for an entity
+
  - entity.pollChatPosts - get events back for posts to the chat for an entity
  - entity.clearEvents - clear events for this entity
- 
-Note - extra features are NOT guaranteed to be maintained in future releases, particularly if updates are made to the original Pi API which replace the functionality
 
 ###  PythondsMinecraft Commands supported
 1) Add Blocks Methods - Minecraft Class
@@ -103,57 +57,81 @@ Note - extra features are NOT guaranteed to be maintained in future releases, pa
 - world.setTrapDoor : Material block of  BlockData type TrapDoor
 - world.setWall :  Material block of  BlockData type Wall - version 3.0 and more
 
-
+2) Informations on Blocks Methods - Minecraft Class
+----------------------------------------------------
 - world.getBlock 
 - world.getBlockWithData : Get block and BlockData at X,Y,Z
 - world.getHeight 
-- world.getEntityTypes
-- world.getEntities 
-- world.removeEntity 
-- world.removeEntities 
-- world.setCustomName 
-- world.spawnEntity 
+
+
+3) Adding entities (Mobs) Methods - Minecraft Class
+----------------------------------------------------
+- world.spawnEntity
 - world.spawnCat 
 - world.spawnHorse 
 - world.spawnParrot 
 - sworld.pawnRabbit 
 - world.spawnWolf 
+
+
+3) Gestion of entities (Mobs) Methods - Minecraft Class
+----------------------------------------------------
+- world.getEntityTypes
+- world.getEntities 
+- world.removeEntities 
+- world.removeEntity 
+- world.setCustomName 
+
+4) Players Methods - Minecraft Class
+-------------------------------------------
 - world.getPlayerEntityId 
 - world.etPlayerEntityIds 
+
+5) Chat Methods - Minecraft Class
+-------------------------------------------
 - world.postToChat
 
+6) Player Gestion -  Player Class
+------------------------------------------------
 - player.getDirection 
 - player.getEntities :
 - player.getPitch 
 - player.getPos 
 - player.getRotation 
+- player.getTilePos 
 - player.pollBlockHits :
 - player.pollProjectileHits 
 - player.removeEntities 
-- player.getTilePos 
 - player.setDirection 
 - player.setPos 
 - player.setPich 
 - player.setRotation doesn't- Pb with Bukkit version 15.1.1
 - player.setTilePos
 
+6) Entity (Mobs) Gestion - Entity clss
+------------------------------------------------
 - entity.getEntities 
 - entity.getDirection 
 - entity.getName 
 - entity.getPos 
 - entity.getPitch 
-- entity.getRotation -entity.getTilePos 
 - entity.pollBlockHits 
 - entity.PollProjectileHits :
-- ntity.removeEntities 
-- ntity.setDirection 
+- entity.getRotation 
+- entity.getTilePos 
+- entity.removeEntities 
+- entity.setDirection 
 - entity.setPos 
 - ntity.setPitch :
 - entity.setRotation doesn't- Pb with Bukkit version 15.1.1
 - entity.setTilePos
 
+
+6) Event Gestion - Event clss
+------------------------------------------------
 - events.pollBlockHits
 - events.PollProjectileHits 
+
  
  see Python examples on [http://pinet.rouviere.free.fr/description_mcse/tutoriel_utilisation_mcse__librairie_python.html
 
